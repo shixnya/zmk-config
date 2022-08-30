@@ -54,42 +54,60 @@
         };
     };
 
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default {
             bindings = <
-  &kp Q   &kp W   &kp F   &kp P     &kp B    &kp J   &kp L      &kp U    &kp Y  &kp COLON
-  &kp A   &kp R   &kp S   &kp T     &kp G    &kp M   &kp N      &kp E    &kp I      &kp O
-  &kp Z   &kp X   &kp C   &kp D     &kp V    &kp K   &kp H  &kp COMMA  &kp DOT  &kp SLASH
-                          &mo 1  &kp LCTL  &kp SPC   &mo 2
+              &kp Q           &kp W               &kp F             &kp P      &kp B      &kp J              &kp L                &kp U            &kp Y              &kp TAB
+ &mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T      &kp G      &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O
+              &kp Z           &kp X               &kp C             &kp D      &kp V      &kp K              &kp H            &kp COMMA          &kp DOT                &to 3
+                                                                    &mo 1  &kp ENTER  &kp SPACE              &mo 2
             >;
         };
 
-        left_layer {
+        SYM {
             bindings = <
- &kp NUM_1  &kp NUM_2        &kp NUM_3        &kp NUM_4   &kp NUM_5  &kp NUM_6  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp NUM_0
-   &kp TAB  &kp LC(S)          &kp DQT        &kp PIPE2    &kp HASH  &kp MINUS    &kp EQL   &kp LBKT   &kp RBKT    &kp DEL
-   &kp ESC  &kp TILDE  &kp NON_US_BSLH  &kp NON_US_HASH  &kp TILDE2  &kp MINUS  &kp GRAVE   &kp LBKT   &kp RBKT    &kp DEL
-                                                  &mo 1    &kp LGUI   &kp RGUI      &mo 2
+   &trans         &kp BACKSLASH            &kp PERCENT     &kp DOLLAR  &trans  &trans          &kp CARET  &kp LEFT_BRACE   &kp RIGHT_BRACE         &trans
+ &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp COLON  &trans  &trans  &kp DOUBLE_QUOTES        &kp LBKT          &kp RBKT  &kp SEMICOLON
+   &trans             &kp GRAVE            &kp AT_SIGN  &kp AMPERSAND  &trans  &trans           &kp HASH   &kp LESS_THAN  &kp GREATER_THAN         &trans
+                                                               &trans  &trans  &trans            &kp ESC
             >;
         };
 
-        right_layer {
+        NUM {
             bindings = <
- &kp BANG   &kp ATSN  &kp HASH  &kp DLLR  &kp PRCT   &kp CRRT      &kp AMPS  &kp KMLT  &kp LPRN   &kp RPRN
- &kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN  &kp MINUS  &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
- &kp LSFT   &kp KPLS  &kp LBKT  &kp RBKT  &kp BSLH  &kp UNDER      &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT
-                                   &mo 3  &kp LCTL    &kp SPC         &mo 2
+   &kp BANG  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans  &kp PIPE       &kp MINUS  &kp SLASH    &trans
+ &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &kp APOS  &kp UNDERSCORE  &kp EQUAL  &kp STAR
+  &kp TILDE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans  &kp PLUS    &kp QUESTION   &kp EXCL    &trans
+                                         &kp NUMBER_0  &trans  &trans    &trans
             >;
         };
 
-        tri_layer {
+        NAV {
             bindings = <
-  &kp NUM_1   &kp NUM_2   &kp NUM_3  &kp NUM_4  &kp NUM_5  &trans     &trans        &trans      &trans  &trans
-     &kp F1      &kp F2      &kp F3     &kp F4     &kp F5  &trans  &kp PG_UP  &kp K_VOL_UP  &kp K_MUTE  &trans
- &bt BT_CLR  &bt BT_NXT  &bt BT_PRV     &kp F6     &kp F7  &trans  &kp PG_DN  &kp K_VOL_DN      &trans  &trans
-                                        &trans     &trans  &trans     &trans
+       &bt BT_NXT        &kp F1            &kp F2          &kp F3   &kp F4    &kp PAGE_UP    &kp HOME        &kp UP       &kp END      &kp F1
+ &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT   &kp F5  &kp BACKSPACE    &kp LEFT      &kp DOWN     &kp RIGHT  &kp DELETE
+           &kp F6        &kp F7            &kp F8          &kp F9  &kp F10  &kp PAGE_DOWN  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP       &to 4
+                                                            &to 0   &trans         &trans      &trans
+            >;
+        };
+
+        Other {
+            bindings = <
+ &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &bt BT_SEL 0  &trans  &trans  &trans  &trans  &trans  &trans
+     &trans      &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+     &trans      &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                            &to 0  &trans  &trans  &trans
             >;
         };
     };
