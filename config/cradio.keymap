@@ -49,9 +49,9 @@
 
         NUM {
             bindings = <
-   &kp BANG        &kp PIPE       &kp MINUS        &kp SLASH  &trans     &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &trans
- &kp PERIOD  &kp APOSTROPHE  &kp UNDERSCORE        &kp EQUAL  &trans  &kp COMMA  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp STAR
-  &kp TILDE        &kp PLUS    &kp QUESTION  &kp EXCLAMATION  &trans     &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &trans
+   &kp BANG        &kp PIPE       &kp MINUS        &kp SLASH  &trans     &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
+ &kp PERIOD  &kp APOSTROPHE  &kp UNDERSCORE        &kp EQUAL  &trans  &kp COMMA  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp STAR
+  &kp TILDE        &kp PLUS    &kp QUESTION  &kp EXCLAMATION  &trans     &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &trans
                                                       &trans  &trans     &trans        &kp N0
             >;
         };
