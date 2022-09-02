@@ -40,19 +40,19 @@
 
         SYM {
             bindings = <
-   &trans         &kp BACKSLASH            &kp PERCENT     &kp DOLLAR  &trans         &trans          &kp CARET  &kp LEFT_BRACE   &kp RIGHT_BRACE         &trans
- &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp COLON  &trans  &kp BACKSPACE  &kp DOUBLE_QUOTES        &kp LBKT          &kp RBKT  &kp SEMICOLON
-   &trans             &kp GRAVE            &kp AT_SIGN  &kp AMPERSAND  &trans         &trans           &kp HASH   &kp LESS_THAN  &kp GREATER_THAN         &trans
-                                                               &trans  &trans         &trans            &kp ESC
+                &trans                  &kp BACKSLASH                         &kp PERCENT            &kp DOLLAR  &trans         &trans                      &kp CARET                  &kp LEFT_BRACE              &kp RIGHT_BRACE                       &trans
+ &mt LEFT_CONTROL STAR  &mt LEFT_ALT LEFT_PARENTHESIS  &mt LEFT_COMMAND RIGHT_PARENTHESIS  &mt LEFT_SHIFT COLON  &trans  &kp BACKSPACE  &mt RIGHT_SHIFT DOUBLE_QUOTES  &mt RIGHT_COMMAND LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET  &mt RIGHT_CONTROL SEMICOLON
+                &trans                      &kp GRAVE                         &kp AT_SIGN         &kp AMPERSAND  &trans         &trans                       &kp HASH                   &kp LESS_THAN             &kp GREATER_THAN                       &trans
+                                                                                                         &trans  &trans         &trans                        &kp ESC
             >;
         };
 
         NUM {
             bindings = <
-   &kp BANG  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans  &kp PIPE       &kp MINUS  &kp SLASH    &trans
- &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &kp APOS  &kp UNDERSCORE  &kp EQUAL  &kp STAR
-  &kp TILDE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans  &kp PLUS    &kp QUESTION   &kp EXCL    &trans
-                                         &kp NUMBER_0  &trans  &trans    &trans
+                &kp BANG     &kp NUMBER_4         &kp NUMBER_5   &kp NUMBER_6  &trans  &trans              &kp PIPE                     &kp MINUS            &kp SLASH                  &trans
+ &mt LEFT_CONTROL PERIOD  &mt LEFT_ALT N1  &mt LEFT_COMMAND N2  &mt LSHIFT N3  &trans  &trans  &mt RIGHT_SHIFT APOS  &mt RIGHT_COMMAND UNDERSCORE  &mt RIGHT_ALT EQUAL  &mt RIGHT_CONTROL STAR
+               &kp TILDE     &kp NUMBER_7         &kp NUMBER_8   &kp NUMBER_9  &trans  &trans              &kp PLUS                  &kp QUESTION             &kp EXCL                  &trans
+                                                                 &kp NUMBER_0  &trans  &trans                &trans
             >;
         };
 
