@@ -31,10 +31,10 @@
 
         default {
             bindings = <
-              &kp Q           &kp W               &kp F             &kp P      &kp B      &kp J              &kp L                &kp U            &kp Y              &kp TAB
- &mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T      &kp G      &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O
-              &kp Z           &kp X               &kp C             &kp D      &kp V      &kp K              &kp H            &kp COMMA          &kp DOT                &to 3
-                                                                    &mo 1  &kp ENTER  &kp SPACE              &mo 2
+              &kp Q           &kp W               &kp F             &kp P                   &kp B      &kp J              &kp L                &kp U            &kp Y              &kp TAB
+ &mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T                   &kp G      &kp M  &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O
+              &kp Z           &kp X               &kp C             &kp D                   &kp V      &kp K              &kp H            &kp COMMA          &kp DOT                &to 3
+                                                                    &mo 1  &mt LEFT_COMMAND ENTER  &kp SPACE              &mo 2
             >;
         };
 
@@ -76,10 +76,10 @@
 
         left_hand {
             bindings = <
- &trans    &trans    &kp UP     &trans     &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &kp LEFT  &kp DOWN  &kp RIGHT     &trans  &trans  &trans  &trans  &trans  &trans
- &trans    &trans    &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
-                                 &to 0  &kp SPACE  &trans  &trans
+       &kp ESC  &kp PAGE_UP    &kp UP  &kp PAGE_DOWN                 &kp TAB  &trans  &trans  &trans  &trans  &trans
+ &kp BACKSPACE     &kp LEFT  &kp DOWN      &kp RIGHT                 &kp DEL  &trans  &trans  &trans  &trans  &trans
+        &trans       &trans    &trans         &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                                               &to 0  &mt LEFT_COMMAND SPACE  &trans  &trans
             >;
         };
     };
