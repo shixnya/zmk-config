@@ -41,7 +41,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_COMMAND &kp X>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp X &kp LEFT_COMMAND>;
         };
         copy: copy {
             compatible = "zmk,behavior-macro";
@@ -50,7 +51,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_COMMAND &kp C>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp C &kp LEFT_COMMAND>;
         };
         paste: paste {
             compatible = "zmk,behavior-macro";
@@ -59,7 +61,8 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_COMMAND &kp V>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp V &kp LEFT_COMMAND>;
         };
     };
 
