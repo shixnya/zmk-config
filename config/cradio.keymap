@@ -100,7 +100,7 @@
             bindings = <
           &kp ESC        &kp F1            &kp F2          &kp F3  &kp F4    &kp PAGE_UP    &kp HOME        &kp UP       &kp END      &kp F1
  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp F5  &kp BACKSPACE    &kp LEFT      &kp DOWN     &kp RIGHT  &kp DELETE
-           &kp F6          &cut             &copy          &paste  &paste  &kp PAGE_DOWN  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP       &to 4
+           &kp F6        &kp F7            &kp F8          &paste  &paste  &kp PAGE_DOWN  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP       &to 4
                                                             &to 0  &trans         &trans      &trans
             >;
         };
