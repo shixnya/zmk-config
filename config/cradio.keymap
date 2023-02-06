@@ -10,6 +10,7 @@
 
 &mt {
     // flavor = "tap-preferred";
+
     flavor = "balanced";
     tapping_term_ms = <200>;
 };
@@ -41,19 +42,19 @@
 
         SYM {
             bindings = <
-   &trans         &kp BACKSLASH            &kp PERCENT     &kp DOLLAR  &trans         &trans          &kp CARET  &kp LEFT_BRACE   &kp RIGHT_BRACE      &kp MINUS
- &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp COLON  &trans  &kp BACKSPACE  &kp DOUBLE_QUOTES        &kp LBKT          &kp RBKT  &kp SEMICOLON
-   &trans             &kp GRAVE            &kp AT_SIGN  &kp AMPERSAND  &trans         &trans           &kp HASH   &kp LESS_THAN  &kp GREATER_THAN         &trans
-                                                              &kp ESC  &trans         &trans             &trans
+                &trans  &kp BACKSLASH             &kp PERCENT            &kp DOLLAR  &trans         &trans                      &kp CARET              &kp LEFT_BRACE   &kp RIGHT_BRACE            &kp MINUS
+ &mt LEFT_CONTROL STAR  &mt LALT LPAR  &mt RIGHT_COMMAND RPAR  &mt LEFT_SHIFT COLON  &trans  &kp BACKSPACE  &mt RIGHT_SHIFT DOUBLE_QUOTES  &mt RIGHT_GUI LEFT_BRACKET     &mt RALT RBKT  &mt RCTRL SEMICOLON
+                &trans      &kp GRAVE             &kp AT_SIGN         &kp AMPERSAND  &trans         &trans                       &kp HASH               &kp LESS_THAN  &kp GREATER_THAN               &trans
+                                                                            &kp ESC  &trans         &trans                         &trans
             >;
         };
 
         NUM {
             bindings = <
-   &kp BANG        &kp PIPE       &kp MINUS  &kp SLASH  &trans     &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
- &kp PERIOD  &kp APOSTROPHE    &kp QUESTION   &kp EXCL  &trans  &kp COMMA  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp STAR
-  &kp TILDE        &kp PLUS  &kp UNDERSCORE  &kp EQUAL  &trans     &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &trans
-                                                &trans  &trans     &trans        &kp N0
+                &kp BANG           &kp PIPE              &kp MINUS            &kp SLASH  &trans     &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9        &kp MINUS
+ &mt LEFT_CONTROL PERIOD  &mt LEFT_ALT APOS  &mt LEFT_GUI QUESTION  &mt LEFT_SHIFT EXCL  &trans  &kp COMMA  &mt RSHFT N4   &mt RCMD N5   &mt RALT N6  &mt RCTRL ASTRK
+               &kp TILDE           &kp PLUS         &kp UNDERSCORE            &kp EQUAL  &trans     &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3           &trans
+                                                                                 &trans  &trans     &trans        &kp N0
             >;
         };
 
