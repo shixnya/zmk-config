@@ -62,10 +62,10 @@
 
         NUM {
             bindings = <
-               &kp BANG     &kp NUMBER_4         &kp NUMBER_5   &kp NUMBER_6   &trans  &trans              &kp PIPE                     &kp MINUS            &kp SLASH                  &trans
-&mt LEFT_CONTROL PERIOD  &mt LEFT_ALT N1  &mt LEFT_COMMAND N2  &mt LSHIFT N3  &kp TAB  &trans  &mt RIGHT_SHIFT APOS  &mt RIGHT_COMMAND UNDERSCORE  &mt RIGHT_ALT EQUAL  &mt RIGHT_CONTROL STAR
-              &kp TILDE     &kp NUMBER_7         &kp NUMBER_8   &kp NUMBER_9   &trans  &trans              &kp PLUS                  &kp QUESTION             &kp EXCL                  &trans
-                                                                &kp NUMBER_0   &trans  &trans                &trans
+               &kp BANG     &kp NUMBER_4         &kp NUMBER_5   &kp NUMBER_6     &trans  &trans              &kp PIPE                     &kp MINUS            &kp SLASH                  &trans
+&mt LEFT_CONTROL PERIOD  &mt LEFT_ALT N1  &mt LEFT_COMMAND N2  &mt LSHIFT N3    &kp TAB  &trans  &mt RIGHT_SHIFT APOS  &mt RIGHT_COMMAND UNDERSCORE  &mt RIGHT_ALT EQUAL  &mt RIGHT_CONTROL STAR
+              &kp TILDE     &kp NUMBER_7         &kp NUMBER_8   &kp NUMBER_9  &kp SPACE  &trans              &kp PLUS                  &kp QUESTION             &kp EXCL                  &trans
+                                                                &kp NUMBER_0     &trans  &trans                &trans
             >;
         };
 
