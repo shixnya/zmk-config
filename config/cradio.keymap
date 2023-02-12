@@ -95,14 +95,5 @@
                                               &to 0  &mt LEFT_COMMAND SPACE  &trans  &trans
             >;
         };
-
-        Layer__6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans
-            >;
-        };
     };
 };
