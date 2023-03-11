@@ -16,7 +16,7 @@
 };
 &sk {
     quick-release;
-}
+};
 
 
 / {
