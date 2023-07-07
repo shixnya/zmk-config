@@ -43,10 +43,10 @@
 
         default {
             bindings = <
-      &kp ESCAPE  &kp Q  &kp W          &kp F  &kp P             &kp B        &kp J  &kp L          &kp U    &kp Y  &kp TAB    &kp BACKSPACE
-&kp LEFT_CONTROL  &kp A  &kp R          &kp S  &kp T             &kp G        &kp M  &kp N          &kp E    &kp I    &kp O          &kp RET
-  &kp LEFT_SHIFT  &kp Z  &kp X          &kp C  &kp D             &kp V        &kp K  &kp H      &kp COMMA  &kp DOT    &to 3  &kp RIGHT_SHIFT
-                                &kp BACKSPACE  &mo 1  &kp LEFT_COMMAND    &kp SPACE  &mo 2  &kp RIGHT_ALT
+      &kp ESCAPE  &kp Q  &kp W             &kp F  &kp P          &kp B        &kp J  &kp L          &kp U    &kp Y  &kp TAB    &kp BACKSPACE
+&kp LEFT_CONTROL  &kp A  &kp R             &kp S  &kp T          &kp G        &kp M  &kp N          &kp E    &kp I    &kp O          &kp RET
+  &kp LEFT_SHIFT  &kp Z  &kp X             &kp C  &kp D          &kp V        &kp K  &kp H      &kp COMMA  &kp DOT    &to 3  &kp RIGHT_SHIFT
+                                &kp LEFT_COMMAND  &mo 1  &kp BACKSPACE    &kp SPACE  &mo 2  &kp RIGHT_ALT
             >;
         };
 
