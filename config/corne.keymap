@@ -33,6 +33,16 @@
             bindings = <&sk LSHIFT>;
             key-positions = <2 3>;
         };
+
+        combo_alt {
+            bindings = <&sk LEFT_ALT>;
+            key-positions = <26 27>;
+        };
+
+        combo_command {
+            bindings = <&sk RIGHT_COMMAND>;
+            key-positions = <32 33>;
+        };
     };
 
     macros {
