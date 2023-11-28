@@ -53,55 +53,55 @@
 
         default {
             bindings = <
-      &kp ESCAPE  &kp Q  &kp W             &kp F  &kp P          &kp B        &kp J  &kp L          &kp U    &kp Y  &kp TAB    &kp BACKSPACE
-&kp LEFT_CONTROL  &kp A  &kp R             &kp S  &kp T          &kp G        &kp M  &kp N          &kp E    &kp I    &kp O          &kp RET
-  &kp LEFT_SHIFT  &kp Z  &kp X             &kp C  &kp D          &kp V        &kp K  &kp H      &kp COMMA  &kp DOT    &to 3  &kp RIGHT_SHIFT
-                                &kp LEFT_COMMAND  &mo 1  &kp BACKSPACE    &kp SPACE  &mo 2  &kp RIGHT_ALT
+&kp ESCAPE        &kp Q        &kp W  &kp F             &kp P  &kp B                         &kp J      &kp L        &kp U          &kp Y    &kp TAB  &kp BACKSPACE
+&kp LEFT_CONTROL  &mt LCTRL A  &kp R  &kp S             &kp T  &kp G                         &kp M      &kp N        &kp E          &kp I    &kp O    &kp RET
+&kp LEFT_SHIFT    &kp Z        &kp X  &kp C             &kp D  &kp V                         &kp K      &kp H        &kp COMMA      &kp DOT  &to 3    &kp RIGHT_SHIFT
+                                      &kp LEFT_COMMAND  &mo 1  &mt LEFT_COMMAND BACKSPACE    &kp SPACE  &lt 2 ENTER  &kp RIGHT_ALT
             >;
         };
 
         SYM {
             bindings = <
-&trans                 &trans                  &kp BACKSLASH                         &kp PERCENT            &kp DOLLAR   &trans           &trans                      &kp CARET                  &kp LEFT_BRACE              &kp RIGHT_BRACE                &kp LG(GRAVE)  &trans
+&trans  &trans                 &kp BACKSLASH                  &kp PERCENT                         &kp DOLLAR            &trans     &trans         &kp CARET                      &kp LEFT_BRACE                  &kp RIGHT_BRACE              &kp LG(GRAVE)                &trans
 &trans  &mt LEFT_CONTROL STAR  &mt LEFT_ALT LEFT_PARENTHESIS  &mt LEFT_COMMAND RIGHT_PARENTHESIS  &mt LEFT_SHIFT COLON  &kp TAB    &kp BACKSPACE  &mt RIGHT_SHIFT DOUBLE_QUOTES  &mt RIGHT_COMMAND LEFT_BRACKET  &mt RIGHT_ALT RIGHT_BRACKET  &mt RIGHT_CONTROL SEMICOLON  &trans
-&trans                 &trans                      &kp GRAVE                         &kp AT_SIGN         &kp AMPERSAND   &trans           &trans                       &kp HASH                   &kp LESS_THAN             &kp GREATER_THAN                       &trans  &trans
-                                                                                          &trans                &trans   &trans           &trans                        &kp ESC                          &trans
+&trans  &trans                 &kp GRAVE                      &kp AT_SIGN                         &kp AMPERSAND         &trans     &trans         &kp HASH                       &kp LESS_THAN                   &kp GREATER_THAN             &trans                       &trans
+                                                              &trans                              &trans                &trans     &trans         &kp ESC                        &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans                 &kp BANG     &kp NUMBER_4         &kp NUMBER_5   &kp NUMBER_6     &trans    &trans              &kp PIPE                     &kp MINUS            &kp SLASH                  &trans  &trans
-&trans  &mt LEFT_CONTROL PERIOD  &mt LEFT_ALT N1  &mt LEFT_COMMAND N2  &mt LSHIFT N3    &kp TAB    &trans  &mt RIGHT_SHIFT APOS  &mt RIGHT_COMMAND UNDERSCORE  &mt RIGHT_ALT EQUAL  &mt RIGHT_CONTROL STAR  &trans
-&trans                &kp TILDE     &kp NUMBER_7         &kp NUMBER_8   &kp NUMBER_9  &kp SPACE    &trans              &kp PLUS                  &kp QUESTION             &kp EXCL                  &trans  &trans
-                                                               &trans   &kp NUMBER_0     &trans    &trans                &trans                        &trans
+&trans  &kp BANG                 &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6   &trans       &trans  &kp PIPE              &kp MINUS                     &kp SLASH            &trans                  &trans
+&trans  &mt LEFT_CONTROL PERIOD  &mt LEFT_ALT N1  &mt LEFT_COMMAND N2  &mt LSHIFT N3  &kp TAB      &trans  &mt RIGHT_SHIFT APOS  &mt RIGHT_COMMAND UNDERSCORE  &mt RIGHT_ALT EQUAL  &mt RIGHT_CONTROL STAR  &trans
+&trans  &kp TILDE                &kp NUMBER_7     &kp NUMBER_8         &kp NUMBER_9   &kp SPACE    &trans  &kp PLUS              &kp QUESTION                  &kp EXCL             &trans                  &trans
+                                                  &trans               &kp NUMBER_0   &trans       &trans  &trans                &trans
             >;
         };
 
         NAV {
             bindings = <
-&trans           &kp ESC        &kp F1            &kp F2          &kp F3     &kp F4      &kp PAGE_UP    &kp HOME        &kp UP       &kp END      &kp F1  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT     &kp F5    &kp BACKSPACE    &kp LEFT      &kp DOWN     &kp RIGHT  &kp DELETE  &trans
-&trans         &kp LG(Z)     &kp LG(X)         &kp LG(C)       &kp LG(V)  &kp LG(V)    &kp PAGE_DOWN  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP       &to 4  &trans
-                                                  &trans           &to 0     &trans           &trans      &trans        &trans
+&trans  &kp ESC           &kp F1        &kp F2            &kp F3          &kp F4       &kp PAGE_UP    &kp HOME    &kp UP        &kp END       &kp F1      &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp F5       &kp BACKSPACE  &kp LEFT    &kp DOWN      &kp RIGHT     &kp DELETE  &trans
+&trans  &kp LG(Z)         &kp LG(X)     &kp LG(C)         &kp LG(V)       &kp LG(V)    &kp PAGE_DOWN  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &to 4       &trans
+                                        &trans            &to 0           &trans       &trans         &trans      &trans
             >;
         };
 
         Other {
             bindings = <
 &trans  &bt BT_NXT  &bt BT_PRV  &bt BT_SEL 1  &bt BT_SEL 0  &trans    &bt BT_CLR  &trans  &trans  &trans  &trans  &trans
-&trans      &trans      &trans        &trans        &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans      &trans        &trans        &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans         &to 0   &to 5        &trans  &trans  &trans
+&trans  &trans      &trans      &trans        &trans        &trans    &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans      &trans        &trans        &trans    &trans      &trans  &trans  &trans  &trans  &trans
+                                &trans        &to 0         &to 5     &trans      &trans  &trans
             >;
         };
 
         left_hand {
             bindings = <
-&trans        &kp ESC  &kp PAGE_UP    &kp UP  &kp PAGE_DOWN                 &kp TAB    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp BACKSPACE     &kp LEFT  &kp DOWN      &kp RIGHT                 &kp DEL    &trans  &trans  &trans  &trans  &trans  &trans
-&trans         &trans       &trans    &trans         &trans                  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans          &to 0  &mt LEFT_COMMAND SPACE    &trans  &trans  &trans
+&trans  &kp ESC        &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp TAB                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp BACKSPACE  &kp LEFT     &kp DOWN  &kp RIGHT      &kp DEL                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans       &trans    &trans         &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans    &to 0          &mt LEFT_COMMAND SPACE    &trans  &trans  &trans
             >;
         };
     };
